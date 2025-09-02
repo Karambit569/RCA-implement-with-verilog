@@ -12,19 +12,19 @@ Test project for practicing Verilog personally.
 - Inputs: `A, B, Cin`
 - Outputs: `Sum, Cout`
 
-### `rca_16b.v`
+### `rca_16.v`
 - 16-bit Ripple Carry Adder
 - Built from 16 instances of `full_adder`
 
-### `rca_40b.v`
+### `rca_40.v`
 - 40-bit Ripple Carry Adder
 - Built from 40 instances of `full_adder`
 
-### `rca_80b_16.v`
+### `rca16_80.v`
 - 80-bit RCA
 - Constructed by chaining five `rca_16b` modules
 
-### `rca_80b_40.v`
+### `rca40_80.v`
 - 80-bit RCA
 - Constructed by chaining two `rca_40b` modules
 
