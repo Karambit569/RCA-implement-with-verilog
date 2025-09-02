@@ -1,6 +1,6 @@
-// 40비트 Ripple Carry Adder (RCA)
-// 입력: 40비트 A, B, 1비트 Cin
-// 출력: 40비트 합 S, 최종 캐리 Cout
+// 40-bit Ripple Carry Adder (RCA)
+// Input: 40-bit A, B, 1-bit Cin
+// Output: 40-bit sum S, final carry Cout
 module rca_40b (S, A, B, Cout, Cin);
     input [39:0] A, B;
     input Cin;
@@ -11,17 +11,17 @@ module rca_40b (S, A, B, Cout, Cin);
 
     genvar i;
     generate
-        // 40개의 full_adder를 생성
+        // Instantiate 40 full_adders
         for (i = 0; i < 40; i = i + 1) begin : full_adders
             if (i == 0)
-                // 첫 번째 비트는 입력 캐리 Cin 사용
+                // The first bit uses the input carry Cin
                 full_adder fa (A[i], B[i], Cin, S[i], carry[i]);
             else
-                // 나머지는 이전 단계의 캐리를 입력으로 사용
+                // The remaining bits use the carry from the previous stage
                 full_adder fa (A[i], B[i], carry[i-1], S[i], carry[i]);
         end
     endgenerate
 
-    // 최종 캐리 출력
+    // Final carry output
     assign Cout = carry[39];
 endmodule
