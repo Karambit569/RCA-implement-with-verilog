@@ -1,0 +1,47 @@
+
+
+# Compiled simulation executables (Icarus Verilog, ModelSim, etc.)
+*.out
+*.vvp
+*.exe
+*.out.*
+
+# Simulation output files
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+*.wlf
+*.vstf
+*.asdb
+*.asdb.log
+
+# Waveform viewer / log files
+*.log
+*.jou
+*.pb
+*.str
+*.csv
+
+# Vivado / Quartus / Synopsys temporary project files
+*.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.settings/
+*.qsys/
+*.qws
+*.rpt
+*.summary
+*.dcp
+*.bit
+*.bin
+*.sof
+
+# General editor/OS files
+*.swp
+*~
+.DS_Store
+Thumbs.db
