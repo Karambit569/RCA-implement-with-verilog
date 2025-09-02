@@ -5,7 +5,7 @@ Different RCA designs are provided to demonstrate modular construction of wide a
 
 Test project for practicing Verilog personally.
 
-## ⚙️ Modules
+##  Modules
 
 ### `full_adder.v`
 - 1-bit Full Adder
