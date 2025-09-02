@@ -41,18 +41,3 @@ Each testbench prints results to the console using `$display`.
 ## ▶Simulation
 
 You can run simulations using [Icarus Verilog] or other Verilog simulators (ModelSim, Vivado, etc.).
-
-### Example with Icarus Verilog
-
-```bash
-# Compile
-iverilog -o tb16 tb_rca16_80.v rca_80b_16.v rca_16b.v full_adder.v
-
-# Run simulation
-vvp tb16
-
-# Compile
-iverilog -o tb40 tb_rca40_80.v rca_80b_40.v rca_40b.v full_adder.v
-
-# Run simulation
-vvp tb40
